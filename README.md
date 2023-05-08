@@ -9,4 +9,4 @@ engineering course.
 All of the following are projects done during the course
 |Project name|Description|
 |-|-|
-|`[0x00-python-hello_world](/0x00-python-hello_world/)`|A shell script that runs a pyhton script|
+|[`0x00-python-hello_world`](/0x00-python-hello_world/)|A shell script that runs a pyhton script|
