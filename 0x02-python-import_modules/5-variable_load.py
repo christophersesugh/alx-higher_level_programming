@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-a = 98
-"""Simple variable
-"""
+import variable_load_5
+print(variable_load_5.a)
+
