@@ -5,7 +5,6 @@ def safe_print_division(a, b):
     den = b
     try:
         result = num / den
-        return result
     except ZeroDivisionError:
         return None
     except:
