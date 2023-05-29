@@ -6,11 +6,9 @@ def safe_print_division(a, b):
     try:
         result = num / den
     except ZeroDivisionError:
-        result = None
         return None
     except:
-        result = None
         return None
     finally:
-        print("Inside result: {:d}".format(result))
+        print("Inside result: {}".format(result))
         return result
