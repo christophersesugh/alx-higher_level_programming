@@ -1,12 +1,14 @@
+#!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    try:
-        count = 0;
-        for element in my_list:
-            if count < x:
-                print(element, end="")
-                count += 1
-        print()
-        return count
-    except TypeError:
-        print("Error: list not iterable")
-        return 0
+    y = 0
+    if not my_list:
+        print("")
+        return (0)
+    while y < x:
+        try:
+            print("{}".format(my_list[y]), end="")
+            y = y + 1
+        except IndexError:
+            break
+    print("")
+    return (y)
