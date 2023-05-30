@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
-    result = None
-    num = a
-    den = b
+    flag = 0
+    div = 0
     try:
-        result = num / den
-    except ZeroDivisionError:
-        return None
-    except TypeError:
-        return None
+        div = a / b
     except:
-        return None
+        flag = 1
     finally:
-        print("Inside result: {}".format(result))
-        return result
+        if flag == 0:
+            print("Inside result: {}".format(div))
+            return (div)
+        else:
+            print("Inside result: None")
+            return (None)
